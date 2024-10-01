@@ -23,7 +23,9 @@ public class StudentsSceneController {
 
     @FXML
     void loadData(ActionEvent event) {
-
+        nameLabel.setText(model.getStudent().getName());
+        creditsLabel.setText("" + model.getStudent().getCredits());
+        dateOfBirthLabel.setText(model.getStudent().getDateOfBirth().toString());
     }
 
     @FXML
